@@ -4,4 +4,205 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  background-color: #f7f0ff;
+}
+/* common CSS Start From here */
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+}
+.btn {
+  padding: 10px 30px;
+  border: none;
+  background: #e02c6d;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 20px;
+  color: #f7f0ff;
+}
+/* Navbar CSS Start From Here */
+nav {
+  width: 1190px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.logo h3 {
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: 700;
+}
+.menu-items {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.menu-items a,
+i {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 25px;
+  color: #3a3a3a;
+}
+/* main part CSS Start From Here */
+
+/* Banner Section CSS Start From Here */
+.banner-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 200px;
+  margin-top: 50px;
+}
+
+.left-area h1 {
+  font-size: 50px;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
+.left-area p {
+  font-size: 16px;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
+
+.left-area i {
+  color: #f7f0ff;
+  margin-left: 10px;
+}
+.right-area img {
+  float: left;
+}
+/* Brand Section CSS Start From here */
+.brand-section {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-items: center;
+  background-color: #fff;
+  padding: 50px 5px;
+  border-top: 1px solid rgba(170, 170, 170, 0.5);
+  border-bottom: 1px solid rgba(170, 170, 170, 0.5);
+  border-radius: 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/* product section CSS Start From Here */
+.section-title h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3a3a3a;
+  text-align: center;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  justify-content: center;
+}
+.product img {
+  width: 100%;
+}
+.product {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.product-details h3 {
+  font-size: 24px;
+  margin: 15px 0;
+}
+.product-details h5 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+.product-details p {
+  margin: 10px 0;
+}
+.product-details .margin {
+  font-size: 20px;
+  margin-left: 0;
+}
+.product-details p .filled {
+  color: #fb8200;
+}
+.product-details p .empty {
+  color: #5e6366;
+  margin-right: 10px;
+}
+.product-details p {
+  font-size: 20px;
+  color: #3a3a3a;
+}
+.see-more {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: none;
+  background: #f7f0ff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 20px;
+  color: #e02c6d;
+  float: right;
+}
+.see-more i {
+  color: #e02c6d;
+  margin-left: 10px;
+}
+/* Insight Section CSS Start From here */
+.insight-section {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+.insight-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+.insight-section .colorful-text {
+  color: #e02c6d;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.insight-section .right-area img {
+  width: 440px;
+  height: 440px;
+}
+/* footer CSS Start From here */
+footer {
+  background-color: #0a0826;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+footer h3,
+p {
+  color: #fff;
+}
+footer i {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+/* All media Query CSS Start From Here */
+
+/* Mobile Device CSS Start From here  */
+@media screen and (max-width: 480px) {
+  .menu-items,
+  .banner-section,
+  .brand-section,
+  .insight-section,
+  .product-section,
+  footer {
+    display: none;
+  }
+  nav {
+    display: grid;
+  }
 }
